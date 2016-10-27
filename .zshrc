@@ -85,14 +85,14 @@ fi
 
 alias gpr="git remote prune origin"
 alias skype2="open -na /Applications/Skype.app --args -DataPath /Users/$(whoami)/Library/Application\ Support/Skype2"
-alias mnt="bash ~/Documents/mount_dev_shares.sh"
 alias v="vagrant"
 alias phpcs="~/.composer/vendor/bin/phpcs -n -p --standard=~/Dev/ruleset.xml --extensions=php"
+alias nuke="rm -rf"
 
 bindkey "[C" forward-word
 bindkey "[D" backward-word
 
-export NVM_DIR="/Users/skibus/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
 
 export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"

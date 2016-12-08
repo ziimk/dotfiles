@@ -49,7 +49,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-flow wd)
+plugins=(git wd docker-compose zsh-autosuggestions)
 
 # User configuration
 
@@ -84,6 +84,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias gpr="git remote prune origin"
+alias gdb="git branch -D"
 alias skype2="open -na /Applications/Skype.app --args -DataPath /Users/$(whoami)/Library/Application\ Support/Skype2"
 alias v="vagrant"
 alias phpcs="~/.composer/vendor/bin/phpcs -n -p --standard=~/Dev/ruleset.xml --extensions=php"
